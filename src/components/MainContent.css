@@ -1,0 +1,56 @@
+.main-content {
+  padding: 60px 0;
+  min-height: calc(100vh - 100px);
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Two-column layout for hero and login sections only */
+.hero-login-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+/* Full-width layout for other sections */
+.add-your-own-section,
+.testimonials-section,
+.footer-section {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .hero-login-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 600px;
+    margin: 0 auto 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 40px 0;
+  }
+  
+  .content-container {
+    padding: 0 16px;
+  }
+  
+  .hero-login-wrapper {
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .add-your-own-section,
+  .testimonials-section,
+  .footer-section {
+    margin-bottom: 32px;
+  }
+}
